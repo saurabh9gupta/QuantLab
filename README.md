@@ -32,99 +32,99 @@ The objective is not to present a single profitable trading strategy, but to dem
 
 ```text
 
-&#x20;                   MARKET DATA
+                   MARKET DATA
 
-&#x20;                        |
+                        |
 
-&#x20;                        v
+                        v
 
-&#x20;               Data Preparation
+               Data Preparation
 
-&#x20;                        |
+                        |
 
-&#x20;                        v
+                        v
 
-&#x20;                 Return Engine
+                 Return Engine
 
-&#x20;                        |
+                        |
 
-&#x20;                        v
+                        v
 
-&#x20;                  Signal Engine
+                  Signal Engine
 
-&#x20;                   /         \\
+                   /         \\
 
-&#x20;                  /           \\
+                  /           \\
 
-&#x20;            Momentum      Mean Reversion
+            Momentum      Mean Reversion
 
-&#x20;                  \\           /
+                  \\           /
 
-&#x20;                   \\         /
+                   \\         /
 
-&#x20;                        v
+                        v
 
-&#x20;             Portfolio Construction
+             Portfolio Construction
 
-&#x20;                        |
+                        |
 
-&#x20;                        v
+                        v
 
-&#x20;                   Backtester
+                   Backtester
 
-&#x20;                        |
+                        |
 
-&#x20;             +----------+----------+
+             +----------+----------+
 
-&#x20;             |                     |
+             |                     |
 
-&#x20;             v                     v
+             v                     v
 
-&#x20;      Transaction Costs      Risk Analytics
+      Transaction Costs      Risk Analytics
 
-&#x20;             |                     |
+             |                     |
 
-&#x20;             +----------+----------+
+             +----------+----------+
 
-&#x20;                        |
+                        |
 
-&#x20;                        v
+                        v
 
-&#x20;             Performance Analytics
+             Performance Analytics
 
-&#x20;                        |
+                        |
 
-&#x20;             +----------+----------+
+             +----------+----------+
 
-&#x20;             |                     |
+             |                     |
 
-&#x20;             v                     v
+             v                     v
 
-&#x20;      Parameter Optimisation   Factor Attribution
+      Parameter Optimisation   Factor Attribution
 
-&#x20;             |
+             |
 
-&#x20;             v
+             v
 
-&#x20;      Walk-Forward Validation
+      Walk-Forward Validation
 
-&#x20;             |
+             |
 
-&#x20;             v
+             v
 
-&#x20;      Multi-Strategy Engine
+      Multi-Strategy Engine
 
-&#x20;             |
+             |
 
-&#x20;             v
+             v
 
-&#x20;      Portfolio Risk Management
+      Portfolio Risk Management
 
-&#x20;             |
+             |
 
-&#x20;             v
+             v
 
-&#x20;         Reporting Engine
+         Reporting Engine
 
 ```
 
@@ -292,11 +292,11 @@ Conceptually:
 
 Signal at t
 
-&#x20;   ↓
+   ↓
 
 Portfolio weights determined
 
-&#x20;   ↓
+   ↓
 
 Weights applied to returns at t+1
 
@@ -494,27 +494,27 @@ QuantLab therefore implements rolling walk-forward optimisation:
 
 Training Window
 
-&#x20;     |
+     |
 
-&#x20;     v
+     v
 
 Select Parameter
 
-&#x20;     |
+     |
 
-&#x20;     v
+     v
 
 Out-of-Sample Test
 
-&#x20;     |
+     |
 
-&#x20;     v
+     v
 
 Roll Forward
 
-&#x20;     |
+     |
 
-&#x20;     v
+     v
 
 Repeat
 
