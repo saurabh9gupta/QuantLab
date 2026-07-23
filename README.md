@@ -1,8 +1,8 @@
-\# QuantLab
+# QuantLab
 
+[![QuantLab Tests](https://github.com/saurabh9gupta/QuantLab/actions/workflows/tests.yml/badge.svg)](https://github.com/saurabh9gupta/QuantLab/actions/workflows/tests.yml)
 
-
-\### Modular Quantitative Research, Backtesting \& Portfolio Analytics Framework
+### Modular Quantitative Research, Backtesting & Portfolio Analytics Framework
 
 
 
@@ -10,7 +10,7 @@ QuantLab is a Python-based quantitative research platform designed to take syste
 
 
 
-\*\*Market Data → Returns → Signals → Portfolio Construction → Backtesting → Transaction Costs → Performance \& Risk Analytics → Parameter Optimisation → Walk-Forward Validation → Multi-Strategy Portfolio Construction → Risk Management → Reporting\*\*
+**Market Data → Returns → Signals → Portfolio Construction → Backtesting → Transaction Costs → Performance & Risk Analytics → Parameter Optimisation → Walk-Forward Validation → Multi-Strategy Portfolio Construction → Risk Management → Reporting**
 
 
 
@@ -22,11 +22,11 @@ The objective is not to present a single profitable trading strategy, but to dem
 
 
 
-\---
+---
 
 
 
-\## Research Architecture
+## Research Architecture
 
 
 
@@ -130,11 +130,11 @@ The objective is not to present a single profitable trading strategy, but to dem
 
 
 
-\---
+---
 
 
 
-\## Core Capabilities
+## Core Capabilities
 
 
 
@@ -182,11 +182,11 @@ QuantLab includes:
 
 
 
-\---
+---
 
 
 
-\## Research Universe
+## Research Universe
 
 
 
@@ -210,7 +210,7 @@ The baseline research universe contains ten liquid US equities across multiple s
 
 | JPM | JPMorgan Chase | Financials |
 
-| JNJ | Johnson \& Johnson | Healthcare |
+| JNJ | Johnson & Johnson | Healthcare |
 
 | XOM | Exxon Mobil | Energy |
 
@@ -220,19 +220,19 @@ The baseline research universe contains ten liquid US equities across multiple s
 
 
 
-The final research dataset contains \*\*1,364 weekly observations from January 2000 to February 2026\*\*.
+The final research dataset contains **1,364 weekly observations from January 2000 to February 2026**.
 
 
 
-\---
+---
 
 
 
-\# Strategy Framework
+# Strategy Framework
 
 
 
-\## Momentum
+## Momentum
 
 
 
@@ -256,7 +256,7 @@ Signals are converted into portfolio weights through the portfolio-construction 
 
 
 
-\## Mean Reversion
+## Mean Reversion
 
 
 
@@ -264,15 +264,15 @@ The mean-reversion strategy provides a complementary systematic signal designed 
 
 
 
-Combining strategies with different return characteristics allows QuantLab to evaluate diversification at the \*\*strategy level\*\*, rather than only at the security level.
+Combining strategies with different return characteristics allows QuantLab to evaluate diversification at the **strategy level**, rather than only at the security level.
 
 
 
-\---
+---
 
 
 
-\# Backtesting Methodology
+# Backtesting Methodology
 
 
 
@@ -280,7 +280,7 @@ QuantLab separates signal generation from portfolio execution.
 
 
 
-Portfolio returns are calculated using \*\*previous-period portfolio weights\*\*, helping prevent contemporaneous signal execution and look-ahead bias.
+Portfolio returns are calculated using **previous-period portfolio weights**, helping prevent contemporaneous signal execution and look-ahead bias.
 
 
 
@@ -308,11 +308,11 @@ This execution convention is explicitly covered by the automated test suite.
 
 
 
-\---
+---
 
 
 
-\# Transaction Costs
+# Transaction Costs
 
 
 
@@ -320,19 +320,19 @@ QuantLab includes a transaction-cost model based on portfolio turnover.
 
 
 
-For portfolio weights \\(w\_t\\), turnover is defined as:
+For portfolio weights \\(w_t\\), turnover is defined as:
 
 
 
-\\\[
+\\[
 
-Turnover\_t =
+Turnover_t =
 
 \\frac{1}{2}
 
-\\sum\_i
+\\sum_i
 
-|w\_{i,t} - w\_{i,t-1}|
+|w_{i,t} - w_{i,t-1}|
 
 \\]
 
@@ -342,9 +342,9 @@ Transaction costs are then estimated as:
 
 
 
-\\\[
+\\[
 
-Cost\_t = Turnover\_t \\times CostRate
+Cost_t = Turnover_t \\times CostRate
 
 \\]
 
@@ -354,15 +354,15 @@ The framework also accounts for the initial cost of establishing the portfolio.
 
 
 
-The baseline research configuration assumes \*\*10 basis points\*\* of transaction costs and supports sensitivity analysis across alternative cost assumptions.
+The baseline research configuration assumes **10 basis points** of transaction costs and supports sensitivity analysis across alternative cost assumptions.
 
 
 
-\---
+---
 
 
 
-\# Performance Analytics
+# Performance Analytics
 
 
 
@@ -400,15 +400,15 @@ The reporting framework calculates:
 
 
 
-\---
+---
 
 
 
-\# Research Results
+# Research Results
 
 
 
-\## Strategy Performance
+## Strategy Performance
 
 
 
@@ -424,7 +424,7 @@ The reporting framework calculates:
 
 
 
-The results illustrate an important distinction between \*\*return generation and portfolio risk management\*\*.
+The results illustrate an important distinction between **return generation and portfolio risk management**.
 
 
 
@@ -432,11 +432,11 @@ Momentum generated the strongest standalone return in the baseline experiment, w
 
 
 
-\---
+---
 
 
 
-\## Strategy Diversification
+## Strategy Diversification
 
 
 
@@ -470,15 +470,15 @@ The final risk-managed allocation was approximately:
 
 
 
-Despite the diversification benefit, the combined portfolio's low return demonstrates that \*\*low correlation alone is insufficient\*\*: portfolio construction cannot compensate for persistently weak underlying alpha.
+Despite the diversification benefit, the combined portfolio's low return demonstrates that **low correlation alone is insufficient**: portfolio construction cannot compensate for persistently weak underlying alpha.
 
 
 
-\---
+---
 
 
 
-\# Walk-Forward Optimisation
+# Walk-Forward Optimisation
 
 
 
@@ -534,7 +534,7 @@ The baseline implementation uses rolling training and testing windows and evalua
 
 
 
-\## Out-of-Sample Results
+## Out-of-Sample Results
 
 
 
@@ -568,11 +568,11 @@ This distinction is central to the design of the framework.
 
 
 
-\---
+---
 
 
 
-\# Factor / Benchmark Attribution
+# Factor / Benchmark Attribution
 
 
 
@@ -610,11 +610,11 @@ These statistics are historical diagnostics and should not be interpreted as evi
 
 
 
-\---
+---
 
 
 
-\# Risk Management
+# Risk Management
 
 
 
@@ -638,19 +638,19 @@ The risk-management layer includes:
 
 
 
-In the baseline experiment, portfolio construction reduced annualised volatility from approximately \*\*31% for the standalone strategies to 16.2% for the risk-managed portfolio\*\*.
+In the baseline experiment, portfolio construction reduced annualised volatility from approximately **31% for the standalone strategies to 16.2% for the risk-managed portfolio**.
 
 
 
-Maximum drawdown nevertheless remained substantial at approximately \*\*−44.7%\*\*, illustrating that volatility diversification does not eliminate tail or regime risk.
+Maximum drawdown nevertheless remained substantial at approximately **−44.7%**, illustrating that volatility diversification does not eliminate tail or regime risk.
 
 
 
-\---
+---
 
 
 
-\# Research Diagnostics
+# Research Diagnostics
 
 
 
@@ -682,11 +682,11 @@ Sample period:
 
 
 
-\---
+---
 
 
 
-\# Visual Analytics
+# Visual Analytics
 
 
 
@@ -728,43 +728,43 @@ results/charts/
 
 
 
-\### Cumulative Returns
+### Cumulative Returns
 
 
 
-!\[Cumulative Returns](results/charts/cumulative\_returns.png)
+![Cumulative Returns](results/charts/cumulative_returns.png)
 
 
 
-\### Drawdown
+### Drawdown
 
 
 
-!\[Drawdown](results/charts/drawdown.png)
+![Drawdown](results/charts/drawdown.png)
 
 
 
-\### Rolling Sharpe Ratio
+### Rolling Sharpe Ratio
 
 
 
-!\[Rolling Sharpe](results/charts/rolling\_sharpe.png)
+![Rolling Sharpe](results/charts/rolling_sharpe.png)
 
 
 
-\### Parameter Sensitivity
+### Parameter Sensitivity
 
 
 
-!\[Sharpe vs Lookback](results/charts/sharpe\_vs\_lookback.png)
+![Sharpe vs Lookback](results/charts/sharpe_vs_lookback.png)
 
 
 
-\---
+---
 
 
 
-\# 18-Module Research Workflow
+# 18-Module Research Workflow
 
 
 
@@ -814,11 +814,11 @@ The notebooks document the development of the framework sequentially:
 
 
 
-\---
+---
 
 
 
-\# Project Structure
+# Project Structure
 
 
 
@@ -842,17 +842,17 @@ QuantLab/
 
 │   └── raw/
 
-│       └── daily\_prices.csv
+│       └── daily_prices.csv
 
 │
 
 ├── notebooks/
 
-│   ├── 01\_Data\_Preparation.ipynb
+│   ├── 01_Data_Preparation.ipynb
 
 │   ├── ...
 
-│   └── 18\_Professional\_Report\_Generator.ipynb
+│   └── 18_Professional_Report_Generator.ipynb
 
 │
 
@@ -862,7 +862,7 @@ QuantLab/
 
 │   ├── reports/
 
-│   └── \*.csv
+│   └── *.csv
 
 │
 
@@ -874,23 +874,23 @@ QuantLab/
 
 │   ├── strategies/
 
-│   │   ├── base\_strategy.py
+│   │   ├── base_strategy.py
 
 │   │   ├── momentum.py
 
-│   │   └── mean\_reversion.py
+│   │   └── mean_reversion.py
 
 │   ├── backtester.py
 
-│   ├── data\_loader.py
+│   ├── data_loader.py
 
-│   ├── data\_preparation.py
+│   ├── data_preparation.py
 
 │   ├── factor.py
 
-│   ├── market\_data.py
+│   ├── market_data.py
 
-│   ├── multi\_strategy.py
+│   ├── multi_strategy.py
 
 │   ├── optimizer.py
 
@@ -898,7 +898,7 @@ QuantLab/
 
 │   ├── pipeline.py
 
-│   ├── portfolio\_risk.py
+│   ├── portfolio_risk.py
 
 │   ├── report.py
 
@@ -908,27 +908,27 @@ QuantLab/
 
 │   ├── signals.py
 
-│   ├── transaction\_costs.py
+│   ├── transaction_costs.py
 
-│   └── walk\_forward.py
+│   └── walk_forward.py
 
 │
 
 ├── tests/
 
-│   ├── test\_backtester.py
+│   ├── test_backtester.py
 
-│   ├── test\_imports.py
+│   ├── test_imports.py
 
-│   ├── test\_performance.py
+│   ├── test_performance.py
 
-│   ├── test\_portfolio.py
+│   ├── test_portfolio.py
 
-│   ├── test\_strategies.py
+│   ├── test_strategies.py
 
-│   ├── test\_transaction\_costs.py
+│   ├── test_transaction_costs.py
 
-│   └── test\_walk\_forward.py
+│   └── test_walk_forward.py
 
 │
 
@@ -946,15 +946,15 @@ QuantLab/
 
 
 
-The larger raw S\&P 500 OHLCV research dataset is intentionally excluded from version control. A smaller research dataset is included to support reproducibility.
+The larger raw S&P 500 OHLCV research dataset is intentionally excluded from version control. A smaller research dataset is included to support reproducibility.
 
 
 
-\---
+---
 
 
 
-\# Automated Testing
+# Automated Testing
 
 
 
@@ -1018,15 +1018,15 @@ Current baseline:
 
 
 
-\---
+---
 
 
 
-\# Installation
+# Installation
 
 
 
-\## Option 1 — pip
+## Option 1 — pip
 
 
 
@@ -1060,7 +1060,7 @@ pip install -r requirements.txt
 
 
 
-\## Option 2 — Conda
+## Option 2 — Conda
 
 
 
@@ -1074,11 +1074,11 @@ conda activate quantlab
 
 
 
-\---
+---
 
 
 
-\# Tested Environment
+# Tested Environment
 
 
 
@@ -1104,11 +1104,11 @@ pytest       7.1.2
 
 
 
-\---
+---
 
 
 
-\# Reproducing the Research
+# Reproducing the Research
 
 
 
@@ -1130,7 +1130,7 @@ The notebooks are numbered according to the research workflow and can be reviewe
 
 ```text
 
-01\_Data\_Preparation.ipynb
+01_Data_Preparation.ipynb
 
 ```
 
@@ -1142,7 +1142,7 @@ through:
 
 ```text
 
-18\_Professional\_Report\_Generator.ipynb
+18_Professional_Report_Generator.ipynb
 
 ```
 
@@ -1152,11 +1152,11 @@ Core reusable functionality is implemented under `src/`, while notebooks serve a
 
 
 
-\---
+---
 
 
 
-\# Research Limitations
+# Research Limitations
 
 
 
@@ -1200,11 +1200,11 @@ The weak walk-forward results reinforce the importance of these limitations and 
 
 
 
-\---
+---
 
 
 
-\# Potential Extensions
+# Potential Extensions
 
 
 
@@ -1248,11 +1248,11 @@ Future research could extend QuantLab with:
 
 
 
-\---
+---
 
 
 
-\# Research Philosophy
+# Research Philosophy
 
 
 
@@ -1286,15 +1286,15 @@ QuantLab is built around that principle.
 
 
 
-\---
+---
 
 
 
-\# Author
+# Author
 
 
 
-\*\*Saurabh Narain Gupta\*\*
+**Saurabh Narain Gupta**
 
 
 
@@ -1302,11 +1302,11 @@ Quantitative Finance | Risk Analytics | Systematic Research | Python
 
 
 
-\---
+---
 
 
 
-\# License
+# License
 
 
 
@@ -1314,11 +1314,11 @@ This project is released under the MIT License.
 
 
 
-\---
+---
 
 
 
-\## Disclaimer
+## Disclaimer
 
 
 
