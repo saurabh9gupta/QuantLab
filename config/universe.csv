@@ -1,0 +1,11 @@
+Ticker,Company,Sector
+AAPL,Apple,Technology
+MSFT,Microsoft,Technology
+NVDA,NVIDIA,Semiconductors
+AMZN,Amazon,Consumer Discretionary
+GOOGL,Alphabet,Communication Services
+JPM,JPMorgan Chase,Financials
+JNJ,Johnson &Johnson,Healthcare
+XOM,Exxon Mobil,Energy
+KO,Coca-Cola,Consumer Staples
+TSLA,Tesla,Automotive

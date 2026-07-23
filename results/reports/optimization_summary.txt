@@ -1,0 +1,16 @@
+
+====================================================
+PARAMETER OPTIMIZATION REPORT
+====================================================
+
+Best Lookback        : 13.0 Weeks
+
+Annual Return        : 5.18%
+
+Annual Volatility    : 30.64%
+
+Sharpe Ratio         : 0.169
+
+Maximum Drawdown     : -54.15%
+
+Winning Weeks        : 51.83%

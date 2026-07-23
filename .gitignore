@@ -1,0 +1,65 @@
+# ============================================================
+# QuantLab - Git Ignore
+# ============================================================
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# QuantLab temporary audit files
+project_structure.txt
+src_audit.txt
+notebook_imports.txt
+
+
+# ============================================================
+# QuantLab Data
+# ============================================================
+
+# Large raw market dataset - regenerate locally
+data/raw/sp500_raw.csv

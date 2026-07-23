@@ -1,0 +1,16 @@
+name: quantlab
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9
+  - numpy>=1.24,<2.0
+  - pandas>=1.4,<2.0
+  - matplotlib>=3.5,<4.0
+  - jupyter
+  - pytest>=7,<8
+  - pip
+  - pip:
+      - yfinance>=1.2,<2.0

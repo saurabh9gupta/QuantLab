@@ -1,0 +1,37 @@
+# QuantLab Research Configuration
+
+data:
+  raw_path: "data/raw/daily_prices.csv"
+  frequency: "W-FRI"
+
+strategy:
+  momentum:
+    lookback: 13
+    top_n: 5
+    bottom_n: 5
+
+  mean_reversion:
+    lookback: 4
+    top_n: 5
+    bottom_n: 5
+
+portfolio:
+  construction: "equal_weight"
+  long_exposure: 1.0
+  short_exposure: -1.0
+
+transaction_costs:
+  bps: 10
+
+performance:
+  periods_per_year: 52
+
+walk_forward:
+  train_years: 5
+  test_years: 1
+  lookbacks:
+    - 1
+    - 4
+    - 8
+    - 13
+    - 26

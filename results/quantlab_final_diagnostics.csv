@@ -1,0 +1,4 @@
+Strategy,Observations,Valid Observations,Missing Observations,Zero Return Periods,Positive Periods,Negative Periods,Start Date,End Date
+Momentum,1364,1364,0,14,707,643,2000-01-07,2026-02-20
+Mean Reversion,1364,1364,0,5,654,705,2000-01-07,2026-02-20
+Risk Managed Portfolio,1364,1364,0,5,686,673,2000-01-07,2026-02-20

@@ -1,0 +1,12 @@
+# QuantLab Core Dependencies
+
+numpy>=1.24,<2.0
+pandas>=1.4,<2.0
+matplotlib>=3.5,<4.0
+yfinance>=1.2,<2.0
+
+# Research Environment
+jupyter>=1.0
+
+# Testing
+pytest>=7.0,<8.0
