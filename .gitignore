@@ -63,3 +63,7 @@ notebook_imports.txt
 
 # Large raw market dataset - regenerate locally
 data/raw/sp500_raw.csv
+
+# Temporary README audit / backup files
+README_AUDIT.txt
+README_BEFORE_CLEANUP.txt
